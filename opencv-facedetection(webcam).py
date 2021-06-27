@@ -9,7 +9,7 @@ while 1:
     for(x,y,w,h) in faces:
         cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)
         font=cv2.FONT_HERSHEY_SIMPLEX
-        cv2.putText(img,"THANUSH S",(200,200),font,2,(255,255,0),2,cv2.LINE_AA)
+        cv2.putText(img,"NAME",(200,200),font,2,(255,255,0),2,cv2.LINE_AA)
         roi_gray=gray[y:y+h,x:x+w]
         roi_color=img[y:y+h,x:x+w]
 
